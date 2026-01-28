@@ -16,8 +16,6 @@ public class teste {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         List<Product> products = new ArrayList<>(); 
-        Product teste = new UsedProduct("teste", 1000.0, LocalDate.parse("2023-12-31"));
-        System.out.println(teste.getClass());
 
 
         System.out.print("Enter the number of products: ");
@@ -51,7 +49,7 @@ public class teste {
                 default:
                     product = new Product(name, price);
                     break;
-            
+                
             }
             products.add(product);
 
@@ -62,5 +60,7 @@ public class teste {
         for(Product product : products){
             System.out.println(product.priceTag());
         }
+
+        sc.close();
     }
 }
