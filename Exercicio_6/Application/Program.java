@@ -19,7 +19,6 @@ public class Program {
         Set<Integer> C = new HashSet<>();
 
 
-
         System.out.print("How many students in course A?");
         num = sc.nextInt();
         for(int i = 0; i < num; i++){
